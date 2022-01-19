@@ -1,0 +1,131 @@
+:root{ /*variáveis de cor*/
+    --vermelho: #E50914;
+    --preto: #fcf9f9;
+}
+
+* {
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+} 
+
+/*ELEMENTOS BASE*/
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*cria um espaço entre os elementos*/
+    max-height: 40px;
+}
+
+header .logo {
+    margin-left: 0px;
+    color: var(--vermelho);
+    font-family: 'arial black', Times;
+    font-size: 35px;
+}
+
+.icone {
+    max-width: 5%;
+    margin-top: 4px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*FILME PRINCIPAL*/
+.livro-principal {
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) , url(../img/capa.gif);
+    /*'linear' cria uma camada transparente sobre a imagem*/
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.livro-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.livro-principal .titulo {
+    margin-top: 25px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 50%);
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    margin-right: 15px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+    transition: .3s ease all;
+}
+.botao a:hover {
+    color: black;
+}
+
+
+.container {
+    margin-left: 30px;
+}
+
+.livro-principal .container {
+    width: 70%;
+}
+
+.box-livro {
+    height: 40%;
+    width: 40%;
+    display: block;
+}
+
+.carrosel-livros {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
